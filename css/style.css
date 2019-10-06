@@ -43,8 +43,8 @@ ul, li {
 }
 
 .logo {
-	height: 70px;
-	width: 70px;
+	font-size: 50px;
+	color: #000;
 	padding: 5px;
 }
 
@@ -500,8 +500,7 @@ button {
 @media screen and (max-width: 576px) {
 
 	.logo {
-	    height: 50px;
-	    width: 50px;
+		font-size: 40px;
     }
     .logo-bar {
     	padding: 0;
