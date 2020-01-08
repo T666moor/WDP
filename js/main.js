@@ -11,9 +11,15 @@ $(document).ready(function() {
 
 	// BURGER BUTTON
 
-	$('.menu-icon').click(function() {
-		$('.menu-icon').toggleClass('active');
+	$('.menu__icon-bars').click(function() {
 		$('nav').toggleClass('active');
+		$('.menu__icon-bars').hide();
+		$('.menu__icon-times').css('display', 'flex');
+	});
+	$('.menu__icon-times').click(function() {
+		$('nav').toggleClass('active');
+		$('.menu__icon-times').hide();
+		$('.menu__icon-bars').css('display', 'flex');
 	});
 
     // TO TOP BUTTON

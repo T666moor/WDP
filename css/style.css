@@ -48,7 +48,7 @@ ul, li {
 	padding: 5px;
 }
 
-.menu-icon {
+.menu__icon {
 	display: none;
 }
 
@@ -299,23 +299,22 @@ button {
 	justify-content: center;
 }
 
-.team__icon i {
+.team__icon a {
+	background: #ddd;
+	color: #666; 
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	margin: 0 10px;
+	font-size: 35px;
 	transition: 0.3s;
 }
 
-.team__icon i:nth-child(1) {
-	color: #ddd;
-}
-
-.team__icon i:nth-child(2) {
-	color: #666;
-}
-
-.team__icon a:hover i:nth-child(1) {
-	color: #00f;
-}
-
-.team__icon a:hover i:nth-child(2) {
+.team__icon a:hover {
+	background: #00f;
 	color: #fff;
 }
 
@@ -455,7 +454,7 @@ button {
 		align-items: center;
 	}
 
-	.menu-icon {
+	.menu__icon {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -468,13 +467,9 @@ button {
 		cursor: pointer;
 	}
 
-	.menu-icon:before {
-		content: '\f0c9';
-		font-family: fontAwesome;
+	.menu__icon-times {
+		display: none;
 	}
-
-	.menu-icon.active:before {
-		content: '\f00d';	}
 
 	.filter {
 		padding: 50px 0;
@@ -496,9 +491,6 @@ button {
 
 @media screen and (max-width: 576px) {
 
-	.logo {
-		font-size: 40px;
-    }
     .logo-bar {
     	padding: 0;
     }
@@ -574,8 +566,6 @@ button {
 	    width: 70px;
 	    height: 70px;
 	    margin: 0;
-    }
-    .circle i {
 	    font-size: 40px;
     }
     .footer form {
